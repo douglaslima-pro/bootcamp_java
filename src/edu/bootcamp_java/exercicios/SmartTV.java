@@ -67,7 +67,7 @@ public class SmartTV {
 					System.out.println();
 					System.out.println("Desligando a TV...");
 					tv.mudarEstado();
-					if (tv.ligada) {
+					if (!tv.ligada) {
 						System.out.println("TV desligada!");
 					} else {
 						System.out.println("Algo deu errado!");
@@ -150,11 +150,11 @@ public class SmartTV {
 	}
 
 	public void avancarCanal() {
-		this.canal = (this.canal < 100) ? this.canal++ : 0;
+		this.canal = (this.canal < 100) ? this.canal + 1 : 0;
 	}
 
 	public void voltarCanal() {
-		this.canal = (this.canal > 0) ? this.canal-- : 100;
+		this.canal = (this.canal > 0) ? this.canal - 1 : 100;
 	}
 
 	public void mudarCanal(int canal) {
