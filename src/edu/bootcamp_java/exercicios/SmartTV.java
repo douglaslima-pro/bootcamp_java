@@ -2,6 +2,21 @@ package edu.bootcamp_java.exercicios;
 
 import java.util.Scanner;
 
+/**
+ * <h1>SmartTV</h1>
+ * <p>A classe SmartTV simula o comportamento de uma televisão.</p>
+ * <h2>Funções</h2>
+ * <ul>
+ * <li>Ligar/desligar</li>
+ * <li>Mudar de canal</li>
+ * <li>Aumentar/diminuir volume</li>
+ * </ul>
+ * <h2>Informações relevantes</h2>
+ * @author Douglas Souza de Lima
+ * @version 1.0
+ * @since 30/04/2024
+ * @see <a href="https://github.com/douglaslima-pro/bootcamp_java">https://github.com/douglaslima-pro/bootcamp_java</a>
+ */
 public class SmartTV {
 
 	/**
