@@ -128,6 +128,7 @@ public class SmartTV {
 			}
 		} while (!sair);
 
+		sc.close();
 	}
 
 	public void mostrarMenu() {
