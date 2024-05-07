@@ -38,7 +38,7 @@ public class CPF {
 	 */
 	public static boolean validarCPF(String CPF) throws CPFInvalidoException {
 		if (CPF.length() != 14) {
-			throw new CPFInvalidoException("ERRO => O CPF deve conter exatamente 14 dígitos!");
+			throw new CPFInvalidoException("ERRO => O CPF deve conter exatamente 14 caracteres!");
 		}
 		Pattern padraoCpf = Pattern.compile("[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}");
 		Matcher matcherCpf = padraoCpf.matcher(CPF);
