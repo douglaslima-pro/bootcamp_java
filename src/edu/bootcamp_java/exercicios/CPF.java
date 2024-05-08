@@ -13,7 +13,7 @@ public class CPF {
 		/**
 		 * Número do CPF no formato XXX.XXX.XXX-XX
 		 */
-		String numeroDoCPF = sc.next();
+		String numeroDoCPF = sc.nextLine();
 		/**
 		 * Armazena true se o CPF for válido, false o contrário
 		 */
@@ -23,11 +23,13 @@ public class CPF {
 		} catch (CPFInvalidoException e) {
 			System.out.println();
 			System.out.println(e.getMessage());
-			System.out.println();
 		} finally {
+			System.out.println();
 			System.out.println(numeroDoCPF);
 			System.out.println("CPF válido? " + (CPFValido ? "sim" : "não"));
 		}
+		System.out.println();
+		System.out.println("Fim da execução.");
 	}
 
 	/**
