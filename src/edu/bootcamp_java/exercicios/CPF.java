@@ -40,7 +40,7 @@ public class CPF {
 	 * @throws CPFInvalidoException
 	 */
 	public static boolean validarCPF(String CPF) throws CPFInvalidoException {
-		Pattern padraoCpf = Pattern.compile("[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}");
+		Pattern padraoCpf = Pattern.compile("[0-9]{3}[.][0-9]{3}[.][0-9]{3}[-][0-9]{2}");
 		Matcher matcherCpf = padraoCpf.matcher(CPF);
 		if (!matcherCpf.matches()) {
 			throw new CPFInvalidoException(
