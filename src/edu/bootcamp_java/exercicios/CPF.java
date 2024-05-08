@@ -31,15 +31,15 @@ public class CPF {
 	}
 
 	/**
-	 * Verifica se o valor corresponde ao tipo {@code CPF} de acordo com o padrão esperado <strong>XXX.XXX.XXX-XX</strong>, sendo X um caractere do tipo numérico (0-9).
+	 * Verifica se o valor corresponde ao tipo {@code CPF} de acordo com o padrão
+	 * esperado <strong>XXX.XXX.XXX-XX</strong>, sendo X um caractere do tipo
+	 * numérico (0-9).
+	 * 
 	 * @param CPF
 	 * @return True se o valor corresponder ao padrão esperado, false o contrário.
 	 * @throws CPFInvalidoException
 	 */
 	public static boolean validarCPF(String CPF) throws CPFInvalidoException {
-		if (CPF.length() != 14) {
-			throw new CPFInvalidoException("ERRO => O CPF deve conter exatamente 14 caracteres!");
-		}
 		Pattern padraoCpf = Pattern.compile("[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}");
 		Matcher matcherCpf = padraoCpf.matcher(CPF);
 		if (!matcherCpf.matches()) {
